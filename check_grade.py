@@ -38,6 +38,7 @@ def unzip_grades():
 
 
 def xlsm_to_csv():
+    # code taken from https://datatofish.com/excel-to-csv-python/
     read_file = read_excel(paths['xlsm'])
     read_file.to_csv(paths['csv'], index=None, header=True)
 
